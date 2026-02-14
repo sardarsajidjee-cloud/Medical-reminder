@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Reminder</title>
+  <link rel="stylesheet" href="File.css">
+</head>
+<body>
+  <h2>💊 Medicine Reminder</h2>
+
+  <input type="text" id="medicine-name" placeholder="Medicine name">
+
+  <label for="doses-per-day">Doses per day:</label>
+  <input type="number" id="doses-per-day" placeholder="e.g. 3">
+
+  <label for="course-days">Course duration (days):</label>
+  <input type="number" id="course-days" placeholder="e.g. 7">
+
+  <label for="interval">Interval (hours):</label>
+  <input type="number" id="interval" placeholder="e.g. 8">
+
+  <button id="submit">Start Reminder</button>
+  <hr>
+  <button id="take-dose">Taken Dose</button>
+  <button id="miss-dose">Missed Dose</button>
+
+  <div id="taken-dose">Taken doses: 0</div>
+  <div id="missed-dose">Missed doses: 0</div>
+  <div id="alert-msg">✅ Good adherence. Adherence: 0%</div>
+
+  <script src="File.js" defer></script>
+</body>
+  </html>
